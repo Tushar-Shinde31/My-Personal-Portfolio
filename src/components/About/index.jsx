@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import Hole from "../../ui/Hole"
+// import Hole from "../../ui/Hole"
 import { skills } from "../../data";
 import CardUi from "../../assets/CardUi";
 
@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section id="about">
        <div className="card section__wrapper">
-        <Hole/>
+        {/* <Hole/> */}
         <div className="column left-column">
           <h3 className='skill__title'></h3>
           <div className="skills__container">
