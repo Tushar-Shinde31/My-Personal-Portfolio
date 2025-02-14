@@ -197,7 +197,7 @@ export const skills = [
     ],
   },
   {
-    title: "Libraries/Frameworks",
+    title: "Lib/Frameworks",
     data: [
       {
         skill: "HTML",

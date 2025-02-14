@@ -32,7 +32,7 @@ const Header = () => {
               <div className="typing-cursor"></div>
             </div>
             <p className='text__muted description text-sm md:text-base mb-6'>
-            A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.
+            A passionate individual who always thrive to work on end to end products which develop sustainable and scalable social and technical systems to create impact.
             </p>
             <div className="button-group flex flex-col md:flex-row gap-4">
               <a href="https://github.com/Tushar-Shinde31" className="btn btn-primary w-full md:w-auto text-center px-6 py-2">

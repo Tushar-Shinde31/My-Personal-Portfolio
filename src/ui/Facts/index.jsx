@@ -40,7 +40,7 @@ const Facts = () => {
                     <Odometer value={clients} className="title" />
                     <h3 className='title'>+</h3>
                 </div>
-                <p className='label'>DSA Questions Solved</p>
+                <p className='label'>DSA Question Solved</p>
             </div>
         </div>
 

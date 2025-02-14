@@ -66,7 +66,7 @@ const skillCategories = [
     ]
   },
   {
-    title: "Libraries/Frameworks",
+    title: "Lib/Frameworks",
     icon: Library,
     gradientClass: "hover:shadow-blue-500/20",
     skills: [
