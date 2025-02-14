@@ -1,0 +1,261 @@
+#skills {
+    min-height: 100vh;
+    padding: 6rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.skills__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.skills__title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(to right, #60a5fa, #a78bfa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 30px rgba(96, 165, 250, 0.2);
+}
+
+.skill__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.skill__card {
+    background: rgba(20, 20, 25, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transform-style: preserve-3d;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Unique gradient backgrounds for each card */
+.skill__card:nth-child(1) {
+    background: linear-gradient(135deg, rgba(88, 28, 135, 0.15), rgba(124, 58, 237, 0.15));
+    border-color: rgba(124, 58, 237, 0.3);
+}
+
+.skill__card:nth-child(2) {
+    background: linear-gradient(135deg, rgba(28, 100, 242, 0.15), rgba(59, 130, 246, 0.15));
+    border-color: rgba(59, 130, 246, 0.3);
+}
+
+.skill__card:nth-child(3) {
+    background: linear-gradient(135deg, rgba(4, 120, 87, 0.15), rgba(16, 185, 129, 0.15));
+    border-color: rgba(16, 185, 129, 0.3);
+}
+
+.skill__card:nth-child(4) {
+    background: linear-gradient(135deg, rgba(190, 24, 93, 0.15), rgba(236, 72, 153, 0.15));
+    border-color: rgba(236, 72, 153, 0.3);
+}
+
+/* Enhanced hover effects */
+.skill__card:hover {
+    transform: scale(1.03) translateY(-5px);
+}
+
+.skill__card:nth-child(1):hover {
+    box-shadow: 0 20px 40px -15px rgba(124, 58, 237, 0.3);
+}
+
+.skill__card:nth-child(2):hover {
+    box-shadow: 0 20px 40px -15px rgba(59, 130, 246, 0.3);
+}
+
+.skill__card:nth-child(3):hover {
+    box-shadow: 0 20px 40px -15px rgba(16, 185, 129, 0.3);
+}
+
+.skill__card:nth-child(4):hover {
+    box-shadow: 0 20px 40px -15px rgba(236, 72, 153, 0.3);
+}
+
+/* Glowing border effect on hover */
+.skill__card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.skill__card:hover::before {
+    opacity: 1;
+}
+
+/* Update skill content styling */
+.skill__content {
+    position: relative;
+}
+
+.skill__content::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(255, 255, 255, 0.1) 20%,
+        rgba(255, 255, 255, 0.1) 80%,
+        transparent
+    );
+}
+
+/* Update skill item styling */
+.skill__content > div > div {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    padding: 0.75rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.skill__content > div > div:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Update animation for skill items */
+.skill__content > div > div {
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 0.5s forwards;
+}
+
+/* Adjust stagger animation for left column */
+.skill__content > div:first-child > div:nth-child(1) { animation-delay: 0.1s; }
+.skill__content > div:first-child > div:nth-child(2) { animation-delay: 0.2s; }
+.skill__content > div:first-child > div:nth-child(3) { animation-delay: 0.3s; }
+
+/* Adjust stagger animation for right column */
+.skill__content > div:last-child > div:nth-child(1) { animation-delay: 0.2s; }
+.skill__content > div:last-child > div:nth-child(2) { animation-delay: 0.3s; }
+.skill__content > div:last-child > div:nth-child(3) { animation-delay: 0.4s; }
+
+/* Card title enhancement */
+.skill__card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.8));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+}
+
+/* Icon container styling */
+.skill__card .p-2 {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+}
+
+/* Animation for skill items */
+.skill__content > div {
+    transform: translateY(20px);
+    opacity: 0;
+    animation: fadeInUp 0.5s forwards;
+    padding: 0.5rem 0;  /* Added padding for better spacing between skills */
+}
+
+@keyframes fadeInUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Stagger animation delay for skill items */
+.skill__content > div:nth-child(1) { animation-delay: 0.1s; }
+.skill__content > div:nth-child(2) { animation-delay: 0.2s; }
+.skill__content > div:nth-child(3) { animation-delay: 0.3s; }
+.skill__content > div:nth-child(4) { animation-delay: 0.4s; }
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .skill__grid {
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+    
+    .skills__title {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .skill__grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+    
+    #skills {
+        padding: 3rem 1rem;
+    }
+    
+    .skills__title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Color Classes */
+.blue-bg { background-color: rgba(59, 130, 246, 0.2); }
+.cyan-bg { background-color: rgba(34, 211, 238, 0.2); }
+.yellow-bg { background-color: rgba(234, 179, 8, 0.2); }
+.green-bg { background-color: rgba(34, 197, 94, 0.2); }
+.white-bg { background-color: rgba(255, 255, 255, 0.2); }
+.teal-bg { background-color: rgba(20, 184, 166, 0.2); }
+.gray-bg { background-color: rgba(107, 114, 128, 0.2); }
+.orange-bg { background-color: rgba(249, 115, 22, 0.2); }
+.purple-bg { background-color: rgba(168, 85, 247, 0.2); }
+.pink-bg { background-color: rgba(236, 72, 153, 0.2); }
+
+.blue-icon { color: #60a5fa; }
+.cyan-icon { color: #22d3ee; }
+.yellow-icon { color: #eab308; }
+.green-icon { color: #22c55e; }
+.white-icon { color: #ffffff; }
+.teal-icon { color: #14b8a6; }
+.gray-icon { color: #6b7280; }
+.orange-icon { color: #f97316; }
+.purple-icon { color: #a855f7; }
+.pink-icon { color: #ec4899; }
+
+/* Enhanced glow effects */
+.purple-glow:hover { box-shadow: 0 0 30px rgba(168, 85, 247, 0.3); }
+.blue-glow:hover { box-shadow: 0 0 30px rgba(59, 130, 246, 0.3); }
+.green-glow:hover { box-shadow: 0 0 30px rgba(34, 197, 94, 0.3); }
+.pink-glow:hover { box-shadow: 0 0 30px rgba(236, 72, 153, 0.3); }
