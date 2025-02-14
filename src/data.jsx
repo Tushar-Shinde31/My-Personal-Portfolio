@@ -27,7 +27,7 @@ import travel from "./assets/travel.png";
 import realestate from "./assets/realestate.png";
 import dsa from "./assets/dsa.png";
 import blood from "./assets/blood.png";
-import aiResume2 from "./assets/aiResume2.png";
+import airesume2 from "./assets/airesume2.png";
 
 export const menu = [
   { name: "About" },
@@ -62,7 +62,7 @@ export const services = [
 export const projects = [
   {
     title: "AI Resume & Cover Letter Builder",
-    image: aiResume2,
+    image: airesume2,
     category: "AI based Web App",
     description: `The AI Resume & Cover Letter Builder is a web app that helps users generate professional, ATS-friendly resumes and cover letters effortlessly using Gemini API. Built with ReactJS, TailwindCSS, and Firebase Authentication, it offers AI-powered content generation, customizable templates, and secure user authentication. Users can edit, preview, and download their documents seamlessly. 🚀`,
     demoLink: "https://github.com/Tushar-Shinde31/AI-Resume-and-Cover-Letter-Builder",
