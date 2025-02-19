@@ -42,11 +42,8 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
    npm run dev
    ```
 
-## 📬 Contact Me
-
-📧 **Email:** your-email@example.com  
-🐦 **Twitter:** (https://x.com/tushaarizz)  
-🔗 **LinkedIn:** (https://www.linkedin.com/in/tushar-shinde-262335257/)  
+## 📬 Contact
+For queries, reach out at **tusharshinde2250@gmail.com** or connect via [LinkedIn](https://www.linkedin.com/in/tushar-shinde-262335257/).
 
 ## 👤 Author
 
