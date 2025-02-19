@@ -1,5 +1,6 @@
 # 🚀 My Personal Portfolio 🌟
 
+https://github.com/user-attachments/assets/60b9ca55-c05b-4728-8431-0aeeffcd0c9c
 
 Welcome to my personal portfolio! This project showcases my skills, projects, and achievements in an interactive and beautifully animated way. Built with ❤️ using **React.js** and **Tailwind CSS**.
 
@@ -44,8 +45,8 @@ Welcome to my personal portfolio! This project showcases my skills, projects, an
 ## 📬 Contact Me
 
 📧 **Email:** your-email@example.com  
-🐦 **Twitter:** [@yourhandle](https://x.com/tushaarizz)  
-🔗 **LinkedIn:** [Your Profile](https://www.linkedin.com/in/tushar-shinde-262335257/)  
+🐦 **Twitter:** (https://x.com/tushaarizz)  
+🔗 **LinkedIn:** (https://www.linkedin.com/in/tushar-shinde-262335257/)  
 
 ## 👤 Author
 
