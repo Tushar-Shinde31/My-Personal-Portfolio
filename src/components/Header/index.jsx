@@ -38,7 +38,7 @@ const Header = () => {
               <a href="https://github.com/Tushar-Shinde31" className="btn btn-primary w-full md:w-auto text-center px-6 py-2">
                 ⭐ Star Me On Github
               </a>
-              <a href="https://drive.google.com/file/d/1moQna2UWKytQemwUGHG21FGMJIyoK1eo/view?usp=sharing" className="btn btn-secondary w-full md:w-auto text-center px-6 py-2">
+              <a href="https://drive.google.com/file/d/1LbogZVSYSWqaYCvYRK-Idm4rKvJ1Ez3Y/view?usp=sharing" className="btn btn-secondary w-full md:w-auto text-center px-6 py-2">
                 See My Resume
               </a>
             </div>
