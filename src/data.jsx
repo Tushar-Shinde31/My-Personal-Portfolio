@@ -278,7 +278,7 @@ export const socialHandles = [
   {
     name: "Instagram",
     icon: <FaInstagram size={24} />,
-    link: "https://instagram.com/tusharryarr",
+    link: "https://www.instagram.com/tusharryaar?igsh=MTZmeTBmZ2MxMWJsdw==",
   },
   {
     name: "Leetcode",
