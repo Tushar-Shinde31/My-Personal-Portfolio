@@ -12,7 +12,7 @@ const Facts = () => {
         const timeoutId = setTimeout(() => {
             setExperience(2);
             setProjects(50);
-            setClients(300);
+            setClients(350);
         }, 3000);
         return () => clearTimeout(timeoutId);
     }, []);
