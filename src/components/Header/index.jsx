@@ -4,6 +4,8 @@ import './Header.css'
 import Facts from '../../ui/Facts'
 import SocialHandles from '../../ui/SocialHandles';
 import BreathCircle from '../../ui/BreathCircle';
+import headerpfp from '../../assets/headerpfp.png'; // adjust path
+
 
 
 const code = `
@@ -23,9 +25,21 @@ const developer = {
 const Header = () => {
   return (
     <header id='header'>
-      <BreathCircle/>
+      
+      {/* breadthCircle */}
+      <div className="breath-circle-wrapper">
+  <BreathCircle />
+
+  <img
+    src={headerpfp}
+    alt="Tushar 3D Avatar"
+    className="breath-avatar"
+    loading="lazy"
+  />
+</div>
+
       <div className="section__wrapper">
-        <div className="grid upper md:flex md:items-center md:justify-between p-4">
+        <div className="grid upper hero-grid p-4">
           <div className="column left-content w-full md:w-1/2">
             <div className="typing-container">
               <h1 className="typing-text text-2xl md:text-4xl font-bold mb-4">Hi 👋, I'm Tushar</h1>
