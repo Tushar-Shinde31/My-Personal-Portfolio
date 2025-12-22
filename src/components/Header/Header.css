@@ -276,6 +276,33 @@ margin-left: 5px;
 animation: blink 0.7s infinite;
 }
 
+
+.breath-circle-wrapper {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 520px;
+  height: 520px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+.breath-avatar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 480px; /* ⬅️ increased from 280px */
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  animation: floatAvatar 6s ease-in-out infinite;
+  filter: drop-shadow(0 30px 60px rgba(0,0,0,0.45));
+}
+
+
+
 @keyframes typing {
 from { width: 0 }
 to { width: 100% }
@@ -303,3 +330,50 @@ animation: float 6s ease-in-out infinite;
   transform: translateY(0px);
 }
 }
+
+@keyframes floatAvatar {
+  0% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(-16px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+}
+
+#header .grid {
+  position: relative;
+  z-index: 3;
+}
+
+
+@media (max-width: 1024px) {
+  .breath-circle-wrapper {
+    width: 420px;
+    height: 420px;
+  }
+
+  .breath-avatar {
+    width: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .breath-circle-wrapper {
+    /* Keep BreathCircle as a subtle background element on mobile */
+    width: 320px;
+    height: 320px;
+    top: 45%;
+    right: -40px;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  .breath-avatar {
+    /* Hide avatar image on mobile; only BreathCircle remains visible */
+    display: none;
+  }
+}
+
