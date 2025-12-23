@@ -4,7 +4,7 @@ import './Header.css'
 import Facts from '../../ui/Facts'
 import SocialHandles from '../../ui/SocialHandles';
 import BreathCircle from '../../ui/BreathCircle';
-import headerpfp from '../../assets/headerpfp.png'; // adjust path
+import headerpfp1 from '../../assets/headerpfp1.png'; 
 
 
 
@@ -31,7 +31,7 @@ const Header = () => {
   <BreathCircle />
 
   <img
-    src={headerpfp}
+    src={headerpfp1}
     alt="Tushar 3D Avatar"
     className="breath-avatar"
     loading="lazy"
