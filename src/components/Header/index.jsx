@@ -52,7 +52,7 @@ const Header = () => {
               <a href="https://github.com/Tushar-Shinde31" className="btn btn-primary w-full md:w-auto text-center px-6 py-2">
                 ⭐ Star Me On Github
               </a>
-              <a href="https://drive.google.com/file/d/1y3xffCKi7rC288xe8chtkz26JeLujU7G/view?usp=sharing" className="btn btn-secondary w-full md:w-auto text-center px-6 py-2">
+              <a href="https://drive.google.com/file/d/13Iw2JG0c-4Zuf53zwgQtuTGtfXyOuP9x/view?usp=sharing" className="btn btn-secondary w-full md:w-auto text-center px-6 py-2">
                 See My Resume
               </a>
             </div>
@@ -76,4 +76,5 @@ const Header = () => {
 }
 
 export default Header
+
 
